@@ -4,7 +4,7 @@
 %% and substrate consumption models, Biotechnology and Bioengineering, 19
 %% (1977), 1831.
 
-function xdot=bioreactor(t,x)
+function yorknashik=bioreactor(t,x)
 
 global u
 
@@ -21,6 +21,6 @@ theta  = [0.31 0.18 0.55 0.05];
 
 % differential equations
 r      = theta(1) * x(2)/(theta(2) + x(2));    
-xdot(1) = (r - u(1) - theta(4)) * x(1);
-xdot(2) = -r * x(1)/theta(3) + u(1) * (u(2) - x(2));
-xdot    = xdot';
+ yorknashik(1) = (r - u(1) - theta(4)) * x(1);
+ yorknashik(2) = -r * x(1)/theta(3) + u(1) * (u(2) - x(2));
+ yorknashik    =  yorknashik';
