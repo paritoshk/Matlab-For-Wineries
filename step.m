@@ -1,13 +1,13 @@
 clear all
 close all
 
-% Step test for Model 24 - Bioreactor
+% Step test for Bioreactor
 
 global u
 
 % Initial Conditions for the States
 x_ss = [50;0.18];   %from Zenteno 2010 paper Biomass conc 0.18 g/l and substrates 
-                    %are Nutrients include N–NH4, Mg, Fe, Co, Mn, I, Ni, and Zn. 
+                    %are Nutrients include Nâ€“NH4, Mg, Fe, Co, Mn, I, Ni, and Zn. 
                     %The best hydrogen production potential was obtained at a COD of 50 g L?1 without nutrient addition. 
 
 % Model Inputs
